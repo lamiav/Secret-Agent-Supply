@@ -19,16 +19,16 @@
       <section class="banner">
         <div class="container">
           <div class="title">
-            <h4>NEW ARRIVALS</h4>
+            <h4>NEW ARRIVAL</h4>
             <h1>SPORT BIKES AND MOTORCYCLES</h1>
           </div>
         </div>
       </section>
 
     <!--Navigation Section-->
-      <nav>
-        <ul>
-          <li>Menu</li>
+      <nav class="wide">
+        <ul class="container">
+          <li>Eyewear</li>
           <li>Apparel</li>
           <li>Gadgets</li>
           <li>Vehicules</li>
@@ -37,30 +37,41 @@
         </ul>
       </nav>
 
+      <!--Tablet Navigation Bar-->
+      <nav class="tablet">
+          <span>Menu</span>
+      </nav>
+
     <!--Sales Items Section-->
       <section class="main-container">
 
         <div class="product container">
           <figure class="item">
-            <img src="./resources/images/pen.png" alt="Pen">
+            <div class="img-container">
+              <img src="./resources/images/pen.png" alt="Pen">
+            </div>
             <figcaption>Exploding Pen</figcaption>
           </figure>
-          <figure class="item">
-            <img src="./resources/images/watch.png" alt="Watch">
+          <figure class="item watch">
+            <div class="img-container">
+              <img src="./resources/images/watch.png" alt="Watch">
+            </div>
             <figcaption>Cellular Watch</figcaption>
           </figure>
-          <figure class="item">
-            <img src="./resources/images/glasses.png" alt="Sunglasses">
+          <figure class="item glasses">
+            <div class="img-container">
+              <img src="./resources/images/glasses.png" alt="Sunglasses">
+            </div>
             <figcaption>Thermal Glasses</figcaption>
           </figure>
         </div>
 
-        <div class="info">
-          <div class="location">
-            <p>Location<p>
-            <span>-47.346436, 84.32354<span>
+        <div class="info container">
+          <div class="info-item">
+            <p>Location</p>
+            <span>-47.346436, 84.32354</span>
           </div>
-          <div class="hours">
+          <div class="info-item">
             <p>Hours</p>
             <span>0800 - 1800</span>
           </div>
@@ -71,7 +82,9 @@
 
     <!--Footer-->
     <footer>
-      <span>Copyright Secret Agent Supply Inc.</span>
+      <div class="container">
+        <span>Copyright Secret Agent Supply Inc.</span>
+      </div>
     </footer>
   </body>
 </html>
