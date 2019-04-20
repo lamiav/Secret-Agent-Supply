@@ -1,0 +1,199 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+header,
+footer,
+.title,
+figcaption,
+p {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+  display: flex;
+}
+
+/*Header*/
+.title.container {
+  padding: 0.66rem 0;
+  align-items: center;
+}
+
+header img {
+  height: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+header span {
+  margin-left: 1rem;
+}
+
+/*Navigation bar*/
+nav {
+  background-color: firebrick;
+  color: white;
+}
+
+nav .container {
+  padding: 0.75rem 0;
+  justify-content: space-between;
+}
+
+nav li {
+  display: inline-block;
+}
+
+.tablet {
+  display: none;
+}
+
+/*Banner*/
+.banner {
+  height: 25rem;
+  background-image: url("../images/moto.jpeg");
+  background-size: cover;
+}
+
+.banner .title {
+  margin-top: 9rem;
+  width: 20rem;
+  font-weight: bold;
+  padding: 2rem 3rem;
+}
+
+h4 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+/*Sales Item Section*/
+.product.container, .info.container {
+  padding-top: 3rem;
+  justify-content: space-between;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+figure img {
+  max-width: 8rem;
+}
+
+figure {
+  border: 4px solid black;
+  width: 30%;
+
+}
+
+figcaption {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+
+.info {
+  padding-bottom: 4rem;
+}
+
+.info-item {
+  width: 35%;
+}
+
+p {
+  padding: 1rem 0rem 1rem 2rem;
+}
+
+/*Footer*/
+footer {
+  height: 10rem;
+}
+
+footer .container {
+  align-items: center;
+  height: 100%;
+}
+
+/*Tablet Screen Size*/
+@media only screen and (max-width: 1024px) {
+ .wide {
+   display: none;
+ }
+
+ .tablet {
+   display: block;
+   text-align: center;
+   padding: 0.75rem 0;
+ }
+
+ figure {
+   width: 47%;
+ }
+
+ .glasses {
+   display: none;
+ }
+}
+
+/*Mobile Screen Size*/
+@media only screen and (max-width: 470px) {
+  h4 {
+    font-size: .77rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .banner {
+    height: 15rem;
+  }
+
+  .banner .title {
+    padding: 1rem 2rem;
+    margin-top: 10rem;
+  }
+
+
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-item {
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
+
+  footer .container {
+    justify-content: center;
+  }
+
+  .watch {
+    display: none;
+  }
+
+  figure {
+    width: 90%;
+  }
+
+  .product.container {
+    justify-content: center;
+  }
+}
